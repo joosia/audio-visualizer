@@ -151,6 +151,7 @@ function loadObj(i: number) {
          setTimeout(() => {
             overlay.style.display = 'none';
             loaderWrapper.style.display = 'none';
+            loadingPercentage.innerText = '';
          }, 500); // 500ms transition before display none
       },
       function (xhr) {
