@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Audio Visualizer</title>
+   </head>
+   <body class="bg-[#080808]">
+      <section
+         id="overlay"
+         class="fixed inset-0 bg-[#080808] transition ease-out-expo  duration-500"></section>
+      <div
+         id="loader-wrapper"
+         class="flex fixed inset-0 z-20 flex-col gap-y-8 justify-center items-center transition ease-out-expo duration-500 bg-[#080808]">
+         <div class="loader"></div>
+         <span class="font-light text-[#1EE3CF]/40"></span>
+      </div>
+      <canvas id="c" class="w-full h-full ease-out-expo"></canvas>
+      <script type="module" src="/src/main.ts"></script>
+   </body>
+</html>
